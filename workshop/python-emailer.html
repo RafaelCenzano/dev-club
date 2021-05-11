@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.lowelldevclub.com/workshop/python-emailer by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 May 2021 18:30:24 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+<title>Email with Python!</title>
+
+<meta charset="utf-8">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="keywords" content="Lowell High School Dev Club Hack Club">
+<meta name="description" content="Website for Lowell High School's Dev Club.">
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://rafael.sirv.com/Images/devclub.png?w=32&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="64x64" href="https://rafael.sirv.com/Images/devclub.png?w=64&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="96x96" href="https://rafael.sirv.com/Images/devclub.png?w=96&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="100x100" href="https://rafael.sirv.com/Images/devclub.png?w=100&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="200x200" href="https://rafael.sirv.com/Images/devclub.png?w=200&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="300x300" href="https://rafael.sirv.com/Images/devclub.png?w=300&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="400x400" href="https://rafael.sirv.com/Images/devclub.png?w=400&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="500x500" href="https://rafael.sirv.com/Images/devclub.png?w=500&amp;png.optimize=true">
+<link rel="alternate icon" href="https://rafael.sirv.com/Images/dev-favicon.ico">
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://rafael.sirv.com/Images/devclub.png?w=57&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="60x60" href="https://rafael.sirv.com/Images/devclub.png?w=60&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="72x72" href="https://rafael.sirv.com/Images/devclub.png?w=72&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="76x76" href="https://rafael.sirv.com/Images/devclub.png?w=76&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="114x114" href="https://rafael.sirv.com/Images/devclub.png?w=114&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="120x120" href="https://rafael.sirv.com/Images/devclub.png?w=120&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="144x144" href="https://rafael.sirv.com/Images/devclub.png?w=144&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="152x152" href="https://rafael.sirv.com/Images/devclub.png?w=152&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="180x180" href="https://rafael.sirv.com/Images/devclub.png?w=180&amp;png.optimize=true">
+
+<link rel="icon" type="image/png" sizes="36x36" href="https://rafael.sirv.com/Images/devclub.png?w=36&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="48x48" href="https://rafael.sirv.com/Images/devclub.png?w=48&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="72x72" href="https://rafael.sirv.com/Images/devclub.png?w=72&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="96x96" href="https://rafael.sirv.com/Images/devclub.png?w=96&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="144x144" href="https://rafael.sirv.com/Images/devclub.png?w=144&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="192x192" href="https://rafael.sirv.com/Images/devclub.png?w=192&amp;png.optimize=true">
+
+<meta property="og:url" content="http://www.lowelldev.club/">
+<meta property="og:image" content="https://rafael.sirv.com/Images/devclub.png?png.optimize=true">
+<meta property="og:description" content="Website for Lowell High School's Dev Club.">
+<meta property="og:title" content="Lowell Dev Club">
+<meta property="og:site_name" content="Lowell Dev Club">
+<meta property="og:see_also" content="http://www.lowelldev.club/">
+
+<meta name="twitter:card" content="Website for Lowell Dev Club">
+<meta name="twitter:url" content="http://www.lowelldev.club/">
+<meta name="twitter:title" content="Lowell Dev Club">
+<meta name="twitter:description" content="Website for Lowell High School's Dev Club.">
+<meta name="twitter:image" content="https://rafael.sirv.com/Images/devclub.png?png.optimize=true">
+
+<meta itemprop="name" content="Lowell Dev Club">
+<meta itemprop="description" content="Website for Lowell High School's Dev Club.">
+<meta itemprop="image" content="https://rafael.sirv.com/Images/devclub.png?png.optimize=true">
+<link rel="stylesheet" type="text/css" href="../static/css/navbar.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/footer.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/markdown.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/workshop.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+<div class="body-particles">
+<nav class="navbar">
+<a href="../index.html" class="navbar-text" id="test"><img src="https://rafael.sirv.com/Images/logo-transparent.png?h=36&amp;png.optimize=true" width="64" height="36" srcset="https://rafael.sirv.com/Images/logo-transparent.png?h=36&png.optimize=true 1x, https://rafael.sirv.com/Images/logo-transparent.png?h=72&png.optimize=true 2x" alt="Dev Club Logo" /></a>
+<div class="navbar-right">
+<a href="../workshop.html" class="navbar-text">Workshop</a>
+<a href="../about.html" class="navbar-text">About</a>
+<a href="../partners.html" class="navbar-text">Partners</a>
+<a href="../donate.html" class="navbar-text">Donate!</a>
+</div>
+<div style="clear:both"></div>
+</nav>
+<div class="container rounded">
+<h1 class="partners-title"><u>Email with Python!</u></h1>
+<p><a class="back" href="../workshop.html">Back</a></p>
+<p class="info">We created this workshop to show how to send emails using python. There are many ways to do this from the default python SMTP (email server) library to <a target="_blank" rel="noopener" href="https://sendgrid.com/">SendGrid</a> by Twilio. For this workshop, we will be using SendGrid. SendGrid is an online API provided by Twilio that allows us to send emails with ease and less code. Check out the instructions below!</p>
+<article class="markdown-body entry-content container-lg" itemprop="text"><h1><a aria-hidden="true" class="anchor" href="#python-emailer" id="user-content-python-emailer"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Python Emailer</h1>
+<p>using an online <a href="https://en.wikipedia.org/wiki/Integrated_development_environment" rel="nofollow">IDE</a> <strong><a href="https://repl.it/" rel="nofollow">REPL.it</a></strong></p>
+<h2><a aria-hidden="true" class="anchor" href="#api" id="user-content-api"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>API</h2>
+<p>What is an API?</p>
+<p>An API (Application programming interface) is a computer science term describing something a program uses to interact with another programming service, for example, informational services like dictionaries, or connecting and using servers.</p>
+<p><a href="https://en.wikipedia.org/wiki/Application_programming_interface" rel="nofollow">Read more about APIs!</a></p>
+<p>Today's workshop uses an API created by <a href="https://www.twilio.com/" rel="nofollow">Twilio</a> called Send Grid. It uses an API key to allow access for a user to send an email. It takes inputs for who your sending to, who is sending (doesn't have to be an email), the subject, an html body.</p>
+<h2><a aria-hidden="true" class="anchor" href="#replit" id="user-content-replit"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Repl.it</h2>
+<p>Create a new repl and choose python. Make sure its specified as Python or Python 3. <strong>Do Not Use Python 2</strong></p>
+<p><a href="https://github.com/lowell-dev-club/python-text-game/blob/master/replit.png?raw=true" rel="noopener noreferrer" target="_blank"><img alt="repl it image" src="https://github.com/lowell-dev-club/python-text-game/raw/master/replit.png?raw=true" style="max-width:100%;" /></a></p>
+<h2><a aria-hidden="true" class="anchor" href="#creating-the-program" id="user-content-creating-the-program"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Creating the program</h2>
+<h4><a aria-hidden="true" class="anchor" href="#imports" id="user-content-imports"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Imports</h4>
+<p>We start by importing the needed code from the sendgrid library.</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> <span class="pl-s1">sendgrid</span> <span class="pl-k">import</span> <span class="pl-v">SendGridAPIClient</span>
+<span class="pl-k">from</span> <span class="pl-s1">sendgrid</span>.<span class="pl-s1">helpers</span>.<span class="pl-s1">mail</span> <span class="pl-k">import</span> <span class="pl-v">Mail</span></pre></div>
+<h4><a aria-hidden="true" class="anchor" href="#configuring-the-email" id="user-content-configuring-the-email"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Configuring the email</h4>
+<p>Input all the values needed for sending the email and with the messages you want.</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">message</span> <span class="pl-c1">=</span> <span class="pl-v">Mail</span>(
+    <span class="pl-s1">from_email</span><span class="pl-c1">=</span><span class="pl-s">'<a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="ee889c8183b18b838f8782ae8b968f839e828bc08d8183">[email&#160;protected]</a>'</span>,
+    <span class="pl-s1">to_emails</span><span class="pl-c1">=</span><span class="pl-s">'<a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="53273c13362b323e233f367d303c3e">[email&#160;protected]</a>'</span>,
+    <span class="pl-s1">subject</span><span class="pl-c1">=</span><span class="pl-s">'Sending with Twilio SendGrid is Fun'</span>,
+    <span class="pl-s1">html_content</span><span class="pl-c1">=</span><span class="pl-s">'&lt;strong&gt;and easy to do anywhere, even with Python&lt;/strong&gt;'</span>)</pre></div>
+<h4><a aria-hidden="true" class="anchor" href="#completeing-the-code" id="user-content-completeing-the-code"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Completeing the code</h4>
+<p>We will display and give out an API key to use for your program.<br />
+We use try and except to catch possible errors when sending your email.</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">try</span>:
+    <span class="pl-s1">sg</span> <span class="pl-c1">=</span> <span class="pl-v">SendGridAPIClient</span>(<span class="pl-v">APIKEY</span>))
+    <span class="pl-s1">response</span> <span class="pl-c1">=</span> <span class="pl-s1">sg</span>.<span class="pl-en">send</span>(<span class="pl-s1">message</span>)
+    <span class="pl-en">print</span>(<span class="pl-s1">response</span>.<span class="pl-s1">status_code</span>)
+    <span class="pl-en">print</span>(<span class="pl-s1">response</span>.<span class="pl-s1">body</span>)
+    <span class="pl-en">print</span>(<span class="pl-s1">response</span>.<span class="pl-s1">headers</span>)
+<span class="pl-k">except</span> <span class="pl-v">Exception</span> <span class="pl-k">as</span> <span class="pl-s1">e</span>:
+    <span class="pl-en">print</span>(<span class="pl-s1">e</span>.<span class="pl-s1">message</span>)</pre></div>
+<h4><a aria-hidden="true" class="anchor" href="#advanced-steps" id="user-content-advanced-steps"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Advanced steps</h4>
+<p>We can create a variable to store html code to send through an email.</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">htmlContent</span> <span class="pl-c1">=</span> <span class="pl-s">'''</span>
+<span class="pl-s">&lt;!DOCTYPE html&gt;</span>
+<span class="pl-s">&lt;html&gt;</span>
+<span class="pl-s">&lt;head&gt;</span>
+<span class="pl-s">&lt;style&gt;</span>
+<span class="pl-s">.coolclass {</span>
+<span class="pl-s">  color: rgb(255, 175, 175);</span>
+<span class="pl-s">}</span>
+<span class="pl-s">.smallText {</span>
+<span class="pl-s">  color: #ddd</span>
+<span class="pl-s">  font-size: 7px;</span>
+<span class="pl-s">}</span>
+<span class="pl-s">&lt;/style&gt;</span>
+<span class="pl-s">&lt;/head&gt;</span>
+<span class="pl-s">&lt;body&gt;</span>
+<span class="pl-s">&lt;h1&gt;Hello There.&lt;/h1&gt;</span>
+<span class="pl-s"></span>
+<span class="pl-s">&lt;p class="coolclass"&gt;Welcome to my html file&lt;/p&gt;</span>
+<span class="pl-s"></span>
+<span class="pl-s">&lt;p&gt;Thanks&lt;br&gt;-Lowell Dev Club&lt;/p&gt;</span>
+<span class="pl-s">&lt;p class="smallText&gt;Sent using python!&lt;/p&gt;</span>
+<span class="pl-s">&lt;a href="https://www.lowelldev.club/"&gt;Our website!&lt;/a&gt;</span>
+<span class="pl-s">&lt;/body&gt;</span>
+<span class="pl-s">&lt;/html&gt;</span>
+<span class="pl-s">'''</span></pre></div>
+<p>Then we replace this part of the code to send our new html.</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">message</span> <span class="pl-c1">=</span> <span class="pl-v">Mail</span>(
+    <span class="pl-s1">from_email</span><span class="pl-c1">=</span><span class="pl-s">'<a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="d0b6a2bfbd8fb5bdb1b9bc90b5a8b1bda0bcb5feb3bfbd">[email&#160;protected]</a>'</span>,
+    <span class="pl-s1">to_emails</span><span class="pl-c1">=</span><span class="pl-s">'<a href="../cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="abdfc4ebced3cac6dbc7ce85c8c4c6">[email&#160;protected]</a>'</span>,
+    <span class="pl-s1">subject</span><span class="pl-c1">=</span><span class="pl-s">'Sending with Twilio SendGrid is Fun'</span>,
+    <span class="pl-s1">html_content</span><span class="pl-c1">=</span><span class="pl-s1">htmlContent</span>)</pre></div>
+<p>You can now customize your html email messages with css styling and html elements!</p>
+<p>View the code file <a href="../lowell-dev-club/python-emailer/blob/master/emailer.html">here</a><br />
+Check out a functioning program <a href="https://repl.it/@calee14/Email-sender-workshop" rel="nofollow">here</a></p>
+</article>
+<div class="about_paragraph fade-about-paragraph">
+<p><a rel="noopener" class="plz links-for-workshop" href="https://github.com/lowell-dev-club/python-emailer/" target="_blank">Workshop Repo</a></p>
+</div>
+</div>
+</div>
+<div id="particles-js"></div>
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="../static/js/home.js"></script>
+<footer class="footer">
+<div class="footer-right">
+<a rel="noopener" href="https://www.facebook.com/Lowell-Dev-Club-555840741569907/" class="fab fa-facebook" target="_blank"></a>
+<a rel="noopener" href="https://www.instagram.com/lowelldevclub/" class="fab fa-instagram" target="_blank"></a>
+<a rel="noopener" href="https://join.slack.com/t/lowelldevclub/shared_invite/zt-74kq5zu9-RuzCoIUlwIAw4fLU8wq5LQ" class="fab fa-slack" target="_blank"></a>
+<a rel="noopener" href="https://discord.gg/KQUBWzG" class="fab fa-discord" target="_blank"></a>
+<a rel="noopener" href="https://github.com/lowell-dev-club" class="fab fa-github" target="_blank"></a>
+</div>
+</footer>
+<script type="text/javascript">
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
+    </script>
+</body>
+
+<!-- Mirrored from www.lowelldevclub.com/workshop/python-emailer by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 May 2021 18:30:27 GMT -->
+</html>

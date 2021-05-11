@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.lowelldevclub.com/workshop/text-game-python by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 May 2021 18:30:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+<title>Text Based Game using Python</title>
+
+<meta charset="utf-8">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="keywords" content="Lowell High School Dev Club Hack Club">
+<meta name="description" content="Website for Lowell High School's Dev Club.">
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://rafael.sirv.com/Images/devclub.png?w=32&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="64x64" href="https://rafael.sirv.com/Images/devclub.png?w=64&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="96x96" href="https://rafael.sirv.com/Images/devclub.png?w=96&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="100x100" href="https://rafael.sirv.com/Images/devclub.png?w=100&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="200x200" href="https://rafael.sirv.com/Images/devclub.png?w=200&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="300x300" href="https://rafael.sirv.com/Images/devclub.png?w=300&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="400x400" href="https://rafael.sirv.com/Images/devclub.png?w=400&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="500x500" href="https://rafael.sirv.com/Images/devclub.png?w=500&amp;png.optimize=true">
+<link rel="alternate icon" href="https://rafael.sirv.com/Images/dev-favicon.ico">
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://rafael.sirv.com/Images/devclub.png?w=57&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="60x60" href="https://rafael.sirv.com/Images/devclub.png?w=60&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="72x72" href="https://rafael.sirv.com/Images/devclub.png?w=72&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="76x76" href="https://rafael.sirv.com/Images/devclub.png?w=76&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="114x114" href="https://rafael.sirv.com/Images/devclub.png?w=114&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="120x120" href="https://rafael.sirv.com/Images/devclub.png?w=120&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="144x144" href="https://rafael.sirv.com/Images/devclub.png?w=144&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="152x152" href="https://rafael.sirv.com/Images/devclub.png?w=152&amp;png.optimize=true">
+<link rel="apple-touch-icon" sizes="180x180" href="https://rafael.sirv.com/Images/devclub.png?w=180&amp;png.optimize=true">
+
+<link rel="icon" type="image/png" sizes="36x36" href="https://rafael.sirv.com/Images/devclub.png?w=36&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="48x48" href="https://rafael.sirv.com/Images/devclub.png?w=48&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="72x72" href="https://rafael.sirv.com/Images/devclub.png?w=72&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="96x96" href="https://rafael.sirv.com/Images/devclub.png?w=96&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="144x144" href="https://rafael.sirv.com/Images/devclub.png?w=144&amp;png.optimize=true">
+<link rel="icon" type="image/png" sizes="192x192" href="https://rafael.sirv.com/Images/devclub.png?w=192&amp;png.optimize=true">
+
+<meta property="og:url" content="http://www.lowelldev.club/">
+<meta property="og:image" content="https://rafael.sirv.com/Images/devclub.png?png.optimize=true">
+<meta property="og:description" content="Website for Lowell High School's Dev Club.">
+<meta property="og:title" content="Lowell Dev Club">
+<meta property="og:site_name" content="Lowell Dev Club">
+<meta property="og:see_also" content="http://www.lowelldev.club/">
+
+<meta name="twitter:card" content="Website for Lowell Dev Club">
+<meta name="twitter:url" content="http://www.lowelldev.club/">
+<meta name="twitter:title" content="Lowell Dev Club">
+<meta name="twitter:description" content="Website for Lowell High School's Dev Club.">
+<meta name="twitter:image" content="https://rafael.sirv.com/Images/devclub.png?png.optimize=true">
+
+<meta itemprop="name" content="Lowell Dev Club">
+<meta itemprop="description" content="Website for Lowell High School's Dev Club.">
+<meta itemprop="image" content="https://rafael.sirv.com/Images/devclub.png?png.optimize=true">
+<link rel="stylesheet" type="text/css" href="../static/css/navbar.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/footer.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/markdown.min.css">
+<link rel="stylesheet" type="text/css" href="../static/css/workshop.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+<div class="body-particles">
+<nav class="navbar">
+<a href="../index.html" class="navbar-text" id="test"><img src="https://rafael.sirv.com/Images/logo-transparent.png?h=36&amp;png.optimize=true" width="64" height="36" srcset="https://rafael.sirv.com/Images/logo-transparent.png?h=36&png.optimize=true 1x, https://rafael.sirv.com/Images/logo-transparent.png?h=72&png.optimize=true 2x" alt="Dev Club Logo" /></a>
+<div class="navbar-right">
+<a href="../workshop.html" class="navbar-text">Workshop</a>
+<a href="../about.html" class="navbar-text">About</a>
+<a href="../partners.html" class="navbar-text">Partners</a>
+<a href="../donate.html" class="navbar-text">Donate!</a>
+</div>
+<div style="clear:both"></div>
+</nav>
+<div class="container rounded">
+<h1 class="partners-title"><u>Text Based Game using Python</u></h1>
+<p><a class="back" href="../workshop.html">Back</a></p>
+<p class="info">We created this workshop to help teach python by creating a game. Check out the instructions below to get started!</p>
+<article class="markdown-body entry-content container-lg" itemprop="text"><h1><a aria-hidden="true" class="anchor" href="#python-text-base-game" id="user-content-python-text-base-game"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Python Text-Base Game</h1>
+<p>using an online <a href="https://en.wikipedia.org/wiki/Integrated_development_environment" rel="nofollow">IDE</a> <strong><a href="https://repl.it/" rel="nofollow">REPL.it</a></strong></p>
+<h2><a aria-hidden="true" class="anchor" href="#python" id="user-content-python"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Python</h2>
+<h4><a aria-hidden="true" class="anchor" href="#python-info" id="user-content-python-info"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Python info:</h4>
+<p>Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991. It is used for Machine Learning, Websites, Data Processing, and so much more! Python is an interperted language running directly from code written and doesn't require any pre compiling allowing for simple coding. Python has easy to remember and clean looking syntax and code. Python code is great for beginners and experts alike with its simple and advanced capabilities.</p>
+<h2><a aria-hidden="true" class="anchor" href="#replit" id="user-content-replit"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Repl.it</h2>
+<p>Create a new repl and choose python. Make sure its specified as Python or Python 3. <strong>Do Not Use Python 2</strong></p>
+<p><a href="https://github.com/lowell-dev-club/python-text-game/blob/master/replit.png?raw=true" rel="noopener noreferrer" target="_blank"><img alt="repl it image" src="https://github.com/lowell-dev-club/python-text-game/raw/master/replit.png?raw=true" style="max-width:100%;" /></a></p>
+<h2><a aria-hidden="true" class="anchor" href="#print-statment" id="user-content-print-statment"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Print Statment</h2>
+<p>The print statement is used to output messages.<br />
+Code:</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-en">print</span>(<span class="pl-s">'Hello World!'</span>)
+<span class="pl-en">print</span>(<span class="pl-s">'''</span>
+<span class="pl-s">You enter a dark room.</span>
+<span class="pl-s">The door creaks open.</span>
+<span class="pl-s">      '''</span>)</pre></div>
+<p>Output:</p>
+<blockquote>
+<p>Hello World!<br />
+You enter a dark room.<br />
+The door creaks open.</p>
+</blockquote>
+<p>The print statement has a format tool to allow for number and text(strings to be printed together).<br />
+Code:</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-en">print</span>(<span class="pl-s">f'Hello World! <span class="pl-s1"><span class="pl-kos">{</span><span class="pl-c1">5</span><span class="pl-kos">}</span></span>'</span>)</pre></div>
+<p>Output:</p>
+<blockquote>
+<p>Hello World! 5</p>
+</blockquote>
+<h2><a aria-hidden="true" class="anchor" href="#variables" id="user-content-variables"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Variables</h2>
+<p>Variables hold data. Data can be numbers(integers, decimals) and text(strings) and much more!<br />
+Code:</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">variable</span> <span class="pl-c1">=</span> <span class="pl-c1">404</span>
+<span class="pl-s1">anotherVariable</span> <span class="pl-c1">=</span> <span class="pl-s">'Hello There!'</span>
+<span class="pl-en">print</span>(<span class="pl-s">f'<span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">anotherVariable</span><span class="pl-kos">}</span></span> <span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">variable</span><span class="pl-kos">}</span></span>.'</span>)</pre></div>
+<p>Output:</p>
+<blockquote>
+<p>Hello There! 404.</p>
+</blockquote>
+<p><strong>Make sure to come up with unique variable names</strong></p>
+<h2><a aria-hidden="true" class="anchor" href="#user-input" id="user-content-user-input"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>User input</h2>
+<p>User input is a way to get input from users for your text game.<br />
+Code:</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">variable</span> <span class="pl-c1">=</span> <span class="pl-en">input</span>(<span class="pl-s">'What<span class="pl-cce">\'</span>s your age? '</span>)
+<span class="pl-en">print</span>(<span class="pl-s">f'Your age is <span class="pl-s1"><span class="pl-kos">{</span><span class="pl-s1">variable</span><span class="pl-kos">}</span></span>'</span>)</pre></div>
+<p>Output:</p>
+<blockquote>
+<p>What's your age? 16<br />
+Your age is 16</p>
+</blockquote>
+<h2><a aria-hidden="true" class="anchor" href="#if-statments" id="user-content-if-statments"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>If statments</h2>
+<p>Use if statments to check if something is true, for example, 5 == 5. Use this in conjunction with user input to determine what to do with user input. make the story go right, left, up all based off what the user inputs. You can use elif(else if) and else statments to run different code if the first if statment isn't true for example, 5 == 6 is False.</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">var</span> <span class="pl-c1">=</span> <span class="pl-en">input</span>(<span class="pl-s">'Which way do you walk? '</span>)
+<span class="pl-k">if</span> <span class="pl-s1">var</span> <span class="pl-c1">==</span> <span class="pl-s">'right'</span>:
+    <span class="pl-en">print</span>(<span class="pl-s">'You walk to the right.'</span>)
+<span class="pl-k">elif</span> <span class="pl-s1">var</span> <span class="pl-c1">==</span> <span class="pl-s">'left'</span>:
+    <span class="pl-en">print</span>(<span class="pl-s">'You walk to the left.'</span>)
+<span class="pl-k">else</span>:
+    <span class="pl-en">print</span>(<span class="pl-s">'You walk through the door.'</span>)</pre></div>
+<p>Output:</p>
+<blockquote>
+<p>Which way do you walk? left<br />
+You walk to the left.</p>
+</blockquote>
+<h2><a aria-hidden="true" class="anchor" href="#example-game" id="user-content-example-game"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z" fill-rule="evenodd"></path></svg></a>Example Game</h2>
+<p>Example game.<br />
+Code:</p>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">import</span> <span class="pl-s1">random</span>
+
+<span class="pl-en">print</span>(<span class="pl-s">'It was a dark and stormy night.'</span>)
+<span class="pl-en">print</span>(<span class="pl-s">'You are inside your house and you hear a knock on your door.'</span>)
+
+<span class="pl-s1">whereToGo</span> <span class="pl-c1">=</span> <span class="pl-en">input</span>(<span class="pl-s">'Do you answer the knock? '</span>)
+
+<span class="pl-s">''' use .lower() next to a variable to make any text lowercase. ('HELLO').lower() = 'hello' '''</span>
+<span class="pl-k">if</span> <span class="pl-s1">whereToGo</span>.<span class="pl-en">lower</span>() <span class="pl-c1">==</span> <span class="pl-s">'yes'</span>:
+    <span class="pl-en">print</span>(<span class="pl-s">'You open your door.'</span>)
+    <span class="pl-s1">randNum</span> <span class="pl-c1">=</span> <span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">1</span>,<span class="pl-c1">2</span>)
+    <span class="pl-k">if</span> <span class="pl-s1">randNum</span> <span class="pl-c1">==</span> <span class="pl-c1">1</span>:
+        <span class="pl-en">print</span>(<span class="pl-s">'You are killed by the Boogeyman.'</span>)
+    <span class="pl-k">else</span>:
+        <span class="pl-en">print</span>(<span class="pl-s">'John Wick kills a Boogeyman right in front of you saving you from death.'</span>)
+<span class="pl-k">else</span>:
+    <span class="pl-en">print</span>(<span class="pl-s">'You hear creaking in the attic above you.'</span>)
+    <span class="pl-s1">randNum</span> <span class="pl-c1">=</span> <span class="pl-s1">random</span>.<span class="pl-en">randint</span>(<span class="pl-c1">1</span>,<span class="pl-c1">2</span>)
+    <span class="pl-k">if</span> <span class="pl-s1">randNum</span> <span class="pl-c1">==</span> <span class="pl-c1">1</span>:
+        <span class="pl-en">print</span>(<span class="pl-s">'You are crushed by your roof.'</span>)
+    <span class="pl-k">else</span>:
+        <span class="pl-en">print</span>(<span class="pl-s">'Everything goes away the TV turns back on startiling you.'</span>)</pre></div>
+<p>View the code file <a href="../lowell-dev-club/python-text-game/blob/master/game.html">here</a><br />
+Test the game out <a href="https://repl.it/@RAFAELCENZANO/text-based-game" rel="nofollow">here</a></p>
+</article>
+<div class="about_paragraph fade-about-paragraph">
+<p><a rel="noopener" class="plz links-for-workshop" href="https://github.com/lowell-dev-club/python-text-game" target="_blank">Workshop Repo</a></p>
+</div>
+</div>
+</div>
+<div id="particles-js"></div>
+<script type="text/javascript" src="../static/js/home.js"></script>
+<footer class="footer">
+<div class="footer-right">
+<a rel="noopener" href="https://www.facebook.com/Lowell-Dev-Club-555840741569907/" class="fab fa-facebook" target="_blank"></a>
+<a rel="noopener" href="https://www.instagram.com/lowelldevclub/" class="fab fa-instagram" target="_blank"></a>
+<a rel="noopener" href="https://join.slack.com/t/lowelldevclub/shared_invite/zt-74kq5zu9-RuzCoIUlwIAw4fLU8wq5LQ" class="fab fa-slack" target="_blank"></a>
+<a rel="noopener" href="https://discord.gg/KQUBWzG" class="fab fa-discord" target="_blank"></a>
+<a rel="noopener" href="https://github.com/lowell-dev-club" class="fab fa-github" target="_blank"></a>
+</div>
+</footer>
+<script type="text/javascript">
+var close = document.getElementsByClassName("closebtn");
+var i;
+
+for (i = 0; i < close.length; i++) {
+close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+    }
+}
+    </script>
+</body>
+
+<!-- Mirrored from www.lowelldevclub.com/workshop/text-game-python by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 May 2021 18:30:30 GMT -->
+</html>
